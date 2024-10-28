@@ -18,7 +18,7 @@ function createMatrix() {
             const input = document.createElement("input");
             input.type = "number";
             input.className = "matrix-cell";
-            input.placeholder = j === size ? `B${i+1}` : `A${i+1}${j+1}`;
+            input.placeholder = j === size ? `B${i+1}` : `A${i+1},${j+1}`;
             cell.appendChild(input);
             row.appendChild(cell);
         }
