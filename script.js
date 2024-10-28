@@ -48,7 +48,7 @@ function solveSystem() {
     document.getElementById("steps").innerHTML = "";
     const result = gaussJordan(matrix, size);
     const resultDiv = document.getElementById("result");
-    resultDiv.innerHTML = "Soluciones:<br>";
+    resultDiv.innerHTML = "Solucion:<br>";
     result.forEach((value, index) => {
         resultDiv.innerHTML += `x${index + 1} = ${value.toFixed(2)}<br>`;
     });
