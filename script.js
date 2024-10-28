@@ -56,7 +56,6 @@ function solveSystem() {
 
 function gaussJordan(matrix, size) {
     for (let i = 0; i < size; i++) {
-        // Hacer que el pivote sea 1
         const pivot = matrix[i][i];
         for (let j = i; j <= size; j++) {
             matrix[i][j] /= pivot;
